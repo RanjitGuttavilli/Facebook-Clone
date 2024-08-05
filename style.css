@@ -40,6 +40,7 @@ body{
     display: flex;
     align-items: center;
     margin: 0px 0px 0px 15px;
+    width: 70%;
 }
 nav{
     height: 56px;
@@ -74,7 +75,13 @@ nav{
     height: 70%;
     flex: 1;
   width: 0;
+  
   }
+  .search:focus{
+    width: 52px;
+    padding-left: 30px;
+  }
+ 
   .mid-sec{
     display: flex;
   justify-content: space-around;
@@ -357,6 +364,7 @@ width: 100%;
 .post-date{
   color: gray;
   font-size: 13px;
+  display: flex;
 }
 .follow{
   color: rgb(13, 118, 255);
@@ -390,7 +398,6 @@ width: 100%;
   padding: 6px;
   color: gray;
   cursor: pointer;
-  height: 20px;
 }
 .react-1{
   background: url(Icons/reactions.png) no-repeat;
@@ -418,6 +425,7 @@ width: 100%;
 .common{
   display: flex;
 font-weight: bold;
+padding: 7px 32px;
 }
 .common:hover{
   background-color: rgba(214, 214, 214, 0.527);
@@ -487,6 +495,13 @@ font-weight: bold;
   font-size: 13px;
 }
 
+.public{
+  display: flex;
+  margin-left: 4px;
+}
+.world{
+  width: 13px;
+}
 
 .profile-pic-1{
   display: flex;
@@ -583,10 +598,9 @@ width:20px;
     grid-template-columns: 420px;
   }
   .reactions{
-    margin: 5px 14px;
+    margin: 0px 14px;
     font-size: 13px;
-    height: 20px;
-    justify-content: space-between;
+    height: 30px;
   }
   .reaction-text{
     padding-top: 3px;
@@ -595,7 +609,16 @@ width:20px;
     font-size: 12px;
     white-space: nowrap;
   }
-
+  .common{
+    display: flex;
+  font-weight: bold;
+  padding: 5px 15px;
+    height: 21px;
+  }
+  .common:hover{
+    background-color: rgba(214, 214, 214, 0.527);
+    border-radius: 4px;
+  }
 }
 @media screen and (max-width:400px){
   .container{
@@ -603,10 +626,9 @@ width:20px;
   }
   
   .reactions{
-    margin: 5px 14px;
+    margin: 0px 14px;
     font-size: 13px;
-    height: 20px;
-    justify-content: space-between;
+    height: 30px;
   }
   .reaction-text{
     padding-top: 3px;
@@ -614,6 +636,16 @@ width:20px;
   .upload-options {
     font-size: 12px;
     white-space: nowrap;
+  }
+  .common{
+    display: flex;
+  font-weight: bold;
+  padding: 5px 15px;
+  height: 21px;
+  }
+  .common:hover{
+    background-color: rgba(214, 214, 214, 0.527);
+    border-radius: 4px;
   }
 }
 @media screen and (max-width:360px){
@@ -641,10 +673,9 @@ width:20px;
   height: 7px;
   }
   .reactions{
-    margin: 5px 14px;
+    margin: 0px 14px;
     font-size: 13px;
-    height: 20px;
-    justify-content: space-between;
+    height: 30px;
   }
   .reaction-text{
     padding-top: 3px;
@@ -655,5 +686,15 @@ width:20px;
   }
   span {
     padding-left: 4px;
+  }
+  .common{
+    display: flex;
+  font-weight: bold;
+  padding: 5px 7px;
+  height: 21px;
+  }
+  .common:hover{
+    background-color: rgba(214, 214, 214, 0.527);
+    border-radius: 4px;
   }
 }
